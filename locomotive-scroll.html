@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge" /><![endif]-->
+
+    <title>Title</title>
+    <meta name="description" content="">
+
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"> -->
+
+    <!-- Disable Phone number linking -->
+    <meta name="format-detection" content="telephone=no,email=no,url=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="x-rim-auto-match" content="none">
+
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">    
+
+    <link rel="canonical" href="https://" />
+    <meta name="theme-color" content="#fff" />
+    <meta name="color-scheme" content="light" />
+    
+    <!-- iOS -->
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <meta property="og:title" content="Title">
+    <meta property="og:description" content="">
+    <meta property="og:site_name" content="Title" />
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://">
+    <meta property="og:image" content="">
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Fonts CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="libs/bootstrap/5.2.2/css/bootstrap.min.css">
+
+    <!-- Vendor CSS -->    
+    <link rel="stylesheet" href="libs/slick/1.8.0/slick.css">
+    <link rel="stylesheet" href="libs/fancybox/3.5.7/jquery.fancybox.min.css">
+
+    <link rel="stylesheet" href="libs/animate/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="libs/aos/2.3.4/aos.css">
+
+    <link rel="stylesheet" href="libs/mCustomScrollBar/3.1.5/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="libs/select2/4.0.13/css/select2.min.css">
+
+    <!-- <link rel="stylesheet" href="libs/jquery-ui/1.13.2/jquery-ui.min.css"> -->
+    <link rel="stylesheet" href="libs/locomotive-scroll/4.1.4/locomotive-scroll.min.css">
+    
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-Y"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-XXXXX-Y');
+    </script>  
+
+
+    <style>
+      .h1{
+          height: 100vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 100px;
+      }
+
+      #about-section{
+          height: 100vh;
+          
+      }
+      .font{
+          position: relative;
+          padding: 30px;
+          font-size: 70px; ;
+      }
+      .text{
+          position: absolute;
+          border: 3px solid white;
+          height:  fit-content;
+          width: 50%;
+          right: 0;
+          margin-top: -100px;
+      }
+    </style>
+</head>
+<body> 
+  
+  <div class="project" data-scroll-container>     
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbarMainMobile" aria-labelledby="offcanvasNavbarMainMobileLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarMainMobileLabel">Navbar Mobile</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link m_PageScroll2id" href="#home" aria-current="page" >Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link m_PageScroll2id" href="#section-1">Section 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link m_PageScroll2id" href="#section-5">Section 5</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Page Header : start -->
+    <header id="js-header" class="page-header" data-scroll-section>
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            Logo
+          </a>
+
+          <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button> -->
+
+          <button class="btn btn-primary d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarMainMobile" aria-controls="offcanvasNavbarMainMobile">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarMain">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link m_PageScroll2id" href="#home" aria-current="page" >Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link m_PageScroll2id" href="#section-1" >Section 1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link m_PageScroll2id" href="#section-5" >Section 5</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header> <!-- Page Header : end -->
+  
+    <!-- Main content  : start -->
+    <main class="page-content py-5">
+
+      <section class="section-7" data-scroll-section>
+        <h2 class="h1 mb-4" data-scroll data-scroll-speed="-2" data-scroll-direction="horizontal">Section 1</h2>
+      </section>
+
+      <section id="about-section" data-scroll-section>
+        <div class="container">
+          <div id="about">
+            <h2
+            class="font"
+              data-scroll
+              data-scroll-sticky
+              data-scroll-target="#about-section"
+            >
+              About
+            </h2>
+            <div class="container text">
+              <p class="mb-8">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                pretium, ante sed lacinia ultricies, sapien massa ultricies
+                erat, eu tristique justo est ut tortor. In nibh est, porttitor
+                vulputate erat et, faucibus volutpat felis. Curabitur eleifend
+                nisi quis consectetur euismod. Morbi ac condimentum ante.
+                Aliquam euismod sodales arcu et iaculis. Cras porttitor nisl
+                felis, eget interdum magna cursus et. Curabitur vehicula
+                dignissim ornare.
+              </p>
+              <p class="mb-8">
+                Cras lacinia sit amet justo ut maximus. Integer sapien felis,
+                gravida a commodo et, porttitor non libero. Maecenas lacinia
+                accumsan eros eu dapibus. Mauris dolor odio, vulputate vitae
+                purus vitae, tincidunt egestas orci. Maecenas sollicitudin
+                fringilla justo, id tempus metus elementum sit amet. Nullam
+                vestibulum mauris vitae condimentum sagittis. Suspendisse sed
+                purus vel neque ullamcorper ornare egestas vel ligula. Duis ac
+                mattis odio. Aliquam sodales turpis nec diam maximus, nec
+                fermentum massa mollis.
+              </p>
+              <p>
+                Praesent finibus egestas velit, vitae tristique leo luctus sit
+                amet. Vivamus eu facilisis neque, a venenatis mi. Vestibulum
+                ultricies venenatis arcu sit amet fringilla. Curabitur non
+                tincidunt sem. Sed quis quam ut nulla tincidunt dapibus quis ac
+                lorem. Nulla lobortis ac metus ut molestie.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="client" data-scroll-section>
+        <div class="container">
+          <div id="client-section">
+            <h2 class="font" data-scroll data-scroll-sticky data-scroll-target="#client">
+              Client
+            </h2>
+            <div class="container text">
+                <p class="mb-8">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                  pretium, ante sed lacinia ultricies, sapien massa ultricies
+                  erat, eu tristique justo est ut tortor. In nibh est, porttitor
+                  vulputate erat et, faucibus volutpat felis. Curabitur eleifend
+                  nisi quis consectetur euismod. Morbi ac condimentum ante.
+                  Aliquam euismod sodales arcu et iaculis. Cras porttitor nisl
+                  felis, eget interdum magna cursus et. Curabitur vehicula
+                  dignissim ornare.
+                </p>
+                <p class="mb-8">
+                  Cras lacinia sit amet justo ut maximus. Integer sapien felis,
+                  gravida a commodo et, porttitor non libero. Maecenas lacinia
+                  accumsan eros eu dapibus. Mauris dolor odio, vulputate vitae
+                  purus vitae, tincidunt egestas orci. Maecenas sollicitudin
+                  fringilla justo, id tempus metus elementum sit amet. Nullam
+                  vestibulum mauris vitae condimentum sagittis. Suspendisse sed
+                  purus vel neque ullamcorper ornare egestas vel ligula. Duis ac
+                  mattis odio. Aliquam sodales turpis nec diam maximus, nec
+                  fermentum massa mollis.
+                </p>
+                <p>
+                  Praesent finibus egestas velit, vitae tristique leo luctus sit
+                  amet. Vivamus eu facilisis neque, a venenatis mi. Vestibulum
+                  ultricies venenatis arcu sit amet fringilla. Curabitur non
+                  tincidunt sem. Sed quis quam ut nulla tincidunt dapibus quis ac
+                  lorem. Nulla lobortis ac metus ut molestie.
+                </p>
+              </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="section-15" class="section py-5" data-scroll-section>
+        <div class="container">
+          <h2>CounerTo</h2>
+          <ul class="list-inline" id="counters">
+            <li>
+              <span class="timer" data-from="0" data-to="200" data-speed="30000" data-refresh-interval="50"></span>
+            </li>
+            <li>
+              <span class="timer" data-from="0" data-to="75" data-speed="30000" data-refresh-interval="5"></span>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main> <!-- Main content  : end -->
+
+    <!-- Page Footer : start -->
+    <footer class="page-footer py-3 bg-light" data-scroll-section>
+      <div class="container">
+        &copy; <span id="js-year"></span>
+      </div>
+    </footer> <!-- Page Footer : end -->
+
+    <!-- Fancybox Modal : start -->
+    <!-- <a data-fancybox data-src="#callback" href="javascript:;" class="btn btn-primary">Fancy Modal</a> -->
+
+    <div id="callback" class="fancy-modal">
+      <form class="form">
+        <h2 class="h2">
+          Form Title
+        </h2>
+
+        <div class="position-relative mb-3">
+          <input type="text" name="name" class="form-control" data-rule-required="true" data-msg="Error" placeholder="Name">
+        </div>
+
+        <div class="position-relative mb-3">
+          <input type="text" name="phone" class="form-control js-phone" data-rule-required="true" data-msg="Error" placeholder="Phone">
+        </div>
+
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+
+        <div class="text-center">
+          <input type="submit" value="Send" class="btn btn-primary btn-lg">
+        </div>
+      </form>
+    </div>
+    <!-- <a data-fancybox data-src="#success-form" href="javascript:;">Success</a> -->
+    <div id="success-form" class="fancy-modal">
+      <h2 class="h2">
+        Success
+      </h2>
+      <p class="text-secondary">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, ut.
+      </p>
+    </div>
+    <!-- Fancybox Modal : end -->
+  </div>
+
+  <!-- SVG Sprite -->
+  <div style="height: 0; width: 0; position: absolute; visibility: hidden">
+    <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <defs>
+      </defs>
+    </svg>
+  </div>
+
+  <!-- Vendor JS -->
+  <script src="libs/jquery/3.6.1/jquery.min.js"></script>    
+
+  <script src="libs/slick/1.8.0/slick.min.js"></script>
+  <script src="libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+  <script src="libs/validation/1.19.5/jquery.validate.min.js"></script>
+  <script src="libs/mask/1.4.0/mask.js"></script>
+
+  <script src="libs/aos/2.3.4/aos.js"></script>
+  
+  <script src="libs/mCustomScrollBar/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="libs/select2/4.0.13/js/select2.min.js"></script>
+
+  <script src="libs/PageScroll2id/1.6.8/jquery.malihu.PageScroll2id.min.js"></script>
+
+  <script src="libs/lazysizes/5.3.1/lazysizes.min.js"></script>
+
+  <script src="libs/imagesLoaded/4.1.4/imagesloaded.pkgd.min.js"></script>
+  <script src="libs/isotope/3.0.6/isotope.pkgd.min.js"></script>
+  <script src="libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+
+  <script src="libs/countTo/1.2.0/jquery.countTo.min.js"></script>
+  <script src="libs/gsap/gsap.min.js"></script>
+  <script src="libs/gsap/TweenMax.min.js"></script>
+
+  <!-- <script src="libs/jquery-ui/1.13.2/jquery-ui.min.js"></script> -->
+
+  <script src="libs/locomotive-scroll/4.1.4/locomotive-scroll.min.js"></script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="libs/bootstrap/5.2.2/js/bootstrap.min.js"></script>
+
+  
+
+  <!-- Main JS -->
+  <script src="js/main.js"></script>
+
+  <script>
+    // locomotive-scroll
+    const scroller = new LocomotiveScroll({
+      el: document.querySelector("[data-scroll-container]"),
+      smooth: true,
+      multiplier:.70
+    });
+  </script>
+
+  <!-- Yandex Map -->
+  <!-- <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script type="text/javascript" src="libs/ymap/yandexMap.js"></script>  -->
+</body>
+</html>
